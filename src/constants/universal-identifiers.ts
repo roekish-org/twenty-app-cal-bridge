@@ -1,0 +1,14 @@
+export const APP_DISPLAY_NAME = 'Cal bridge';
+export const APP_DESCRIPTION =
+  'Links Cal.com directly to Twenty: signed webhooks upsert Booking records and link the attendee Person.';
+export const APPLICATION_UNIVERSAL_IDENTIFIER = '0061ba2e-57c2-4b53-9662-e366cdbee451';
+export const DEFAULT_ROLE_UNIVERSAL_IDENTIFIER = '2666535b-a848-41e6-9b99-ba50717d2baa';
+export const CAL_WEBHOOK_SECRET_VARIABLE_UNIVERSAL_IDENTIFIER =
+  'e8adc7b7-e929-4072-9657-c18cb3fd7689';
+export const MAIN_PAGE_FRONT_COMPONENT_UNIVERSAL_IDENTIFIER =
+  '9ebef2c8-06db-4b68-97fb-0f72083119e8';
+export const MAIN_PAGE_LAYOUT_UNIVERSAL_IDENTIFIER = '1cea0ed2-aa20-41b8-a420-d8f78806e5c2';
+export const MAIN_PAGE_LAYOUT_TAB_UNIVERSAL_IDENTIFIER = '63f4606e-7457-4c16-8623-ac50ed26b65c';
+export const MAIN_PAGE_WIDGET_UNIVERSAL_IDENTIFIER = '4913cf9d-c897-4a71-ace8-134d169a4b9e';
+export const MAIN_PAGE_NAVIGATION_MENU_ITEM_UNIVERSAL_IDENTIFIER =
+  '540dfcfb-2ecb-4aa8-8def-3624db8ce0c9';

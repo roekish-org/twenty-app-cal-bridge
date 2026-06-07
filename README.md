@@ -41,6 +41,9 @@ infrastructure is Twenty itself.
 
 ## Quick start (end users)
 
+> **New to Cal.com?** Create an account with our referral link:
+> **https://refer.cal.com/alexismaison-hydg**
+
 1. In Twenty, open **Settings → Applications** and install **Cal bridge**.
 2. Open the app → **Variables** and set **`CAL_WEBHOOK_SECRET`** to a strong
    random string (you'll reuse it in step 4).
@@ -97,4 +100,14 @@ Issues and pull requests are welcome — see [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## License
 
-[MIT](LICENSE) © Roekish
+[MIT](LICENSE) © [Roekish](https://roekish.com)
+
+---
+
+<div align="center">
+
+Built and maintained by **[Roekish](https://roekish.com)**.
+
+New to Cal.com? [Sign up with our referral link](https://refer.cal.com/alexismaison-hydg).
+
+</div>

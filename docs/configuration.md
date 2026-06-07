@@ -40,6 +40,9 @@ Use the exact value shown — the `<app>` segment is install‑specific.
 
 ## 4. Create the Cal.com webhook
 
+> Don't have a Cal.com account yet? Create one with our referral link:
+> **https://refer.cal.com/alexismaison-hydg**
+
 **Cal.com → Settings → Developer → Webhooks → New:**
 
 | Field | Value |

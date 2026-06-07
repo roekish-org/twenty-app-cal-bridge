@@ -1,0 +1,82 @@
+name: Bug report
+description: Report a problem with Cal bridge
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for filing a bug. **Never paste your `CAL_WEBHOOK_SECRET` or any secret value** —
+        redact secrets from logs before posting. For security vulnerabilities, email
+        hello@roekish.com instead of opening a public issue.
+  - type: checkboxes
+    id: preflight
+    attributes:
+      label: Preflight checklist
+      options:
+        - label: I searched [existing issues](https://github.com/roekish-org/twenty-app-cal-bridge/issues) and this isn't a duplicate.
+          required: true
+        - label: I checked the [Troubleshooting wiki](https://github.com/roekish-org/twenty-app-cal-bridge/wiki/Troubleshooting).
+          required: true
+        - label: The Twenty worker is running (the admin panel doesn't show "worker is down").
+          required: false
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: A clear description of the bug and what you expected to happen instead.
+      placeholder: When Cal.com sends BOOKING_CREATED, no Booking appears in Twenty...
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      value: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+  - type: dropdown
+    id: cal-event
+    attributes:
+      label: Cal.com trigger event(s) involved
+      multiple: true
+      options:
+        - BOOKING_CREATED
+        - BOOKING_REQUESTED
+        - BOOKING_RESCHEDULED
+        - BOOKING_CANCELLED
+        - BOOKING_REJECTED
+        - MEETING_ENDED
+        - Other / not sure
+  - type: input
+    id: http-status
+    attributes:
+      label: Webhook HTTP response status
+      description: What status does Cal.com show for the delivery? (200 / 400 / 401 / 413 / 500)
+      placeholder: "401"
+  - type: textarea
+    id: logs
+    attributes:
+      label: Function logs / response body
+      description: Output of `yarn twenty dev:function:logs -n cal-webhook`, or the response body. Redact any secrets.
+      render: shell
+  - type: input
+    id: app-version
+    attributes:
+      label: Cal bridge version
+      placeholder: "1.0.0"
+    validations:
+      required: true
+  - type: input
+    id: twenty-version
+    attributes:
+      label: Twenty version
+      placeholder: "latest / 2.9.x"
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Anything else that helps — Cal.com config, screenshots, related issues.

@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 📖 Documentation & FAQ
+    url: https://github.com/roekish-org/twenty-app-cal-bridge/wiki
+    about: Installation, configuration, troubleshooting, and FAQ live in the wiki — please check there first.
+  - name: 🔒 Report a security vulnerability
+    url: mailto:hello@roekish.com
+    about: Please report security issues privately by email, never as a public issue.
+  - name: 📅 New to Cal.com?
+    url: https://refer.cal.com/alexismaison-hydg
+    about: Create a Cal.com account with our referral link.
